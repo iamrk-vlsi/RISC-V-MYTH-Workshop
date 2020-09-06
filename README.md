@@ -3,17 +3,17 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
-- [Day 1 : Instruction Set Architecture & GNU Toolchain.](#Day 1 :Instruction-Set-Architecture-&-GNU-Toolchain.)
-- [Day 2 : Application Binary Interface and basic verification flow.](#Day-2-:-Application-Binary-Interface-and-basic-verification-flow.)
-- [Day 3 : Introduction to TL Verilog and Makerchip.](#Day-3-:-Introduction-to-TL-Verilog-and-Makerchip.)
-- [Day 4 : RISCV CPU Core Implementation.](#Day-4-:-RISCV-CPU-Core-Implementation.) 
-- [Day 5 : Pipelining the RISCV Core.](#Day-5-:-Pipelining-the-RISCV-Core.)
+- [Day 1 Instruction Set Architecture & GNU Toolchain.](#Day-1-Instruction-Set-Architecture-&-GNU-Toolchain.)
+- [Day 2 Application Binary Interface and basic verification flow.](#Day-2-Application-Binary-Interface-and-basic-verification-flow.)
+- [Day 3 Introduction to TL Verilog and Makerchip.](#Day-3-Introduction-to-TL-Verilog-and-Makerchip.)
+- [Day 4 RISCV CPU Core Implementation.](#Day-4-RISCV-CPU-Core-Implementation.) 
+- [Day 5 Pipelining the RISCV Core.](#Day-5-Pipelining-the-RISCV-Core.)
 - [Acknowledgements.](#Acknowledgements)
 
 # What is RISC-V?
 RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open and this makes it easy and flexible for anyone to build a processor that supports it. In this workshop we were given the overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
 
-# Day 1 : Instruction Set Architecture & GNU Toolchain.
+# Day 1 Instruction Set Architecture & GNU Toolchain.
   This was just a warm up of the extensive work we would be doing in the further days. It made us familiar with the VSD-IAT platform and using the lab instances . 
   A brief overview of how the higher level languages are converted to assembly and then into machine/binary format , in a hierarchical level was given. Then we     were introduced to the various types of instructions which are as follows:
   
@@ -56,7 +56,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   **Output on console**
   ![](DAY1/day1_lab2.png)
   
-# Day 2 : Application Binary Interface and basic verification flow.
+# Day 2 Application Binary Interface and basic verification flow.
   On This day, we delved deep into the lower layers on how the higher layer instructions in c are translated to machine understandable codes. 
   Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised hardware resources . The ISA is inherently divided into two parts: *User & System ISA* and *User ISA*  the latter is available to the   user directly by system calls. 
   
@@ -83,7 +83,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   **Output on console**
   ![](DAY2/day2_lab2_iverilog_count_3.png)
   
-# Day 3 : Introduction to TL Verilog and Makerchip. 
+# Day 3 Introduction to TL Verilog and Makerchip. 
   An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential cyclic calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
   
   TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline. 
@@ -106,7 +106,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     ![](DAY3/Day3_Diagram.png)	
    Overall this was a hectic day, as it took time for me to learn and implement these new concepts, as well as get used to the tools.The   final of Day-3 forms the basis for ALU of the RISC-V core.
    
-# Day 4: RISCV CPU Core Implementation.
+# Day 4 RISCV CPU Core Implementation.
   Due to the strong basics built in TL-Verilog and digital design in the previous day , The core aspect of this workshop to build a RISC V core went smoothly for   me. On this day , a plan was implemented to build the following :
   
   - Program Counter (PC)
@@ -125,7 +125,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
    **RISC-V CORE**
    ![](DAY4/RISCV_CPU_CORE_1cycle.png)	
 
-# Day 5: Pipelining the RISCV Core.
+# Day 5 Pipelining the RISCV Core.
    Finally,we developed the pipelined model for the core developed on Day 4. 
    - A 3 cycle RISC V pipelined core, with all the base integer instruction sets was developed. 
    - For Load and store a Data memory element was added with neccessary instruction decoding logic.
