@@ -40,7 +40,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     The instructions which work on these numbers are called Base Integer Instruction **RV64I**.
   
 ## Lab 1 : C program of Sum 1 to n  numbers.
-  A basic C program to calculate sum of natural numbers upto a limit provided by the user. The program can be found here (insert link) 
+  A basic C program to calculate sum of natural numbers upto a limit provided by the user. The program can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/sum1to9.c) 
   (**Note** : This problem  is used as a basis to understand at each hierarchy level of programming and then finally implement our core till day 5. )
   Command used to compile the C program is `gcc <filename.c>` or `gcc -o <binary file name> <filename.c>`and to run we use `./a.out` or `./<binary file name>`
   
