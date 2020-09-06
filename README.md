@@ -3,7 +3,7 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
-- [Instruction Set Architecture & GNU Toolchain.](#Instruction-Set-Architecture-&-GNU-Toolchain)
+- [Day 1 Instruction Set Architecture & GNU Toolchain.](#Instruction-Set-Architecture-&-GNU-Toolchain)
 - [Day 2 Application Binary Interface and basic verification flow.](#Day-2-Application-Binary-Interface-and-basic-verification-flow)
 - [Day 3 Introduction to TL Verilog and Makerchip.](#Day-3-Introduction-to-TL-Verilog-and-Makerchip)
 - [Day 4 RISCV CPU Core Implementation.](#Day-4-RISCV-CPU-Core-Implementation) 
@@ -13,7 +13,7 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 # What is RISC-V?
 RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open and this makes it easy and flexible for anyone to build a processor that supports it. In this workshop we were given the overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
 
-# Instruction Set Architecture & GNU Toolchain.
+# Day 1 Instruction Set Architecture & GNU Toolchain.
   This was just a warm up of the extensive work we would be doing in the further days. It made us familiar with the VSD-IAT platform and using the lab instances . 
   A brief overview of how the higher level languages are converted to assembly and then into machine/binary format , in a hierarchical level was given. Then we     were introduced to the various types of instructions which are as follows:
   
