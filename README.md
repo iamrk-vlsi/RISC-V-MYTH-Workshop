@@ -53,7 +53,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - Spike has a debugging feature too which can be used to run it in steps, following is the command `spike -d pk sum1ton.o`.
   
   **Output on console**
-  ![](Day1/day_1_lab1.png)
+  ![](DAY1/day_1_lab1.png)
 
 ## Lab 3 : Max and Min number representations. 
   A C program is implemented to  show the maximum and minimum sizes for RV64I. The program can be found here (insert link)  
