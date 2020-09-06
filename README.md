@@ -3,11 +3,11 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
-- [Day 1.](#Day-1-:-Instruction-Set-Architecture-&-GNU-Toolchain.)
-- [Day 2.](#Day-2-:-Application-Binary-Interface-and-basic-verification-flow.)
-- [Day 3.](#Day-3-:-Introduction-to-TL-Verilog-and-Makerchip.)
-- [Day 4.](#Day-4-:-RISCV-CPU-Core-Implementation.) 
-- [Day 5.](#Day-5-:-Pipelining-the-RISCV-Core.)
+- [Day 1 : Instruction Set Architecture & GNU Toolchain.](#Day-1-:-Instruction-Set-Architecture-&-GNU-Toolchain.)
+- [Day 2 : Application Binary Interface and basic verification flow.](#Day-2-:-Application-Binary-Interface-and-basic-verification-flow.)
+- [Day 3 : Introduction to TL Verilog and Makerchip.](#Day-3-:-Introduction-to-TL-Verilog-and-Makerchip.)
+- [Day 4 : RISCV CPU Core Implementation.](#Day-4-:-RISCV-CPU-Core-Implementation.) 
+- [Day 5 : Pipelining the RISCV Core.](#Day-5-:-Pipelining-the-RISCV-Core.)
 - [Acknowledgements.](#Acknowledgements)
 
 # What is RISC-V?
@@ -83,7 +83,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   **Output on console**
   ![](DAY2/day2_lab2_iverilog_count_3.png)
   
-# Day 3 : Introduction to TL-Verilog and Makerchip. 
+# Day 3 : Introduction to TL Verilog and Makerchip. 
   An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential cyclic calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
   
   TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline. 
