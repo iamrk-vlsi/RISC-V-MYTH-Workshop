@@ -1,5 +1,5 @@
 # How I built a RISC-V CPU Core in a span of 5 days.
-Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) workshop, conducted by VSD Corp and Redwood EDA.This workshop was conducted over a period of 5 days and in  this short span of time we were able to understand & implement a RISC-V core with base instruction set. Programming language used in the software section was C, assembly (pseudo codes) were also utilised, along with TL-Verliog for HDL implementation. Tools used: Spike and Makerchip IDE.
+Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) workshop, conducted by VSD Corp and Redwood EDA.This workshop was conducted over a period of 5 days and in  this short span of time we were able to understand & implement a RISC-V core with base instruction set. Programming language used in the software section was C, assembly (pseudo codes) were also utilised, along with TL-Verilog for HDL implementation. Tools used: Spike and Makerchip IDE.
 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
@@ -44,8 +44,6 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   (**Note** : This problem  is used as a basis to understand at each hierarchy level of programming and then finally implement our core till day 5. )
   Command used to compile the C program is `gcc <filename.c>` or `gcc -o <binary file name> <filename.c>`and to run we use `./a.out` or `./<binary file name>`
   
-  **Output on console**
-  
 ## Lab 2 : C program of Sum 1 to n  numbers, RISC-V toolchain.
   The same c program is now compiled using RISC-V toolchain.  
   - Command used to compile the C program is `riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c` OR 
@@ -81,7 +79,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   **Output on console**
 
 ## Lab 2 : To run and verify on a RISC-V Core
-  An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to us , just to observed  the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
+  An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to using iverilog simulator, just to observe  the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
   
   **Output on console**
   
