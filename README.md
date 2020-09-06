@@ -82,6 +82,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   
   **Output on console**
 ![](DAY2/day2_lab1_asm.png)
+
 ## Lab 2 : To run and verify on a RISC-V Core
   An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to using iverilog simulator, just to observe  the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
   
@@ -91,7 +92,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
 # Day 3 : Introduction to TL-Verilog(Transaction Level Verilog) and Makerchip 
   An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an                   implementation of a sequential one cycle calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
   
-  TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and     error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the   end of the pipeline.  
+  TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and     error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the   end of the pipeline. 
   
   **Advantages** : 
     - Code reduction , and thus less chances of being bug prone.
@@ -100,15 +101,17 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     - Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
     
   ## Lab: 1 Cycle Sequential Calculator with Validity
-   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator (insert code here) , which was built step by step as we progressed through the lessons.
-   
-   **Makerchip IDE** (TODO: column wise add the screenshot, include VIZ in one side RHS) 
-   
-   **Note** As seen above, apart from the waveforms, The VIZ graphic visualizer was a very helpful tool in Makerchip which helped us analyse and debug our design             in case of any functional errors.
+   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator, which was built step by step as we progressed through the lessons.
+    - For Cyclic Calculator Code [click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY3/cyclic_calc.tlv)
+
+   **Makerchip IDE** 
+   ![](DAY3/day3_makerchip.png)
+
+   **Note** As seen above, apart from the waveforms, The VIZ graphic visualizer was a very helpful tool in Makerchip which helped us analyse and debug our design in case of any functional errors.
   
-   **Design of 1 Cycle Calculator with Validity**
- 
-   Overall this was a hectic day, as it took time for me to learn and implement these new concepts, as well as get used to the tools. Personally it took me more than 12 hours to complete this activity. The final lab forms the basis for ALU of the RISC-V core.
+   **1 Cycle Calculator with Validity**
+    ![](DAY3/Day3_Diagram.png)	
+   Overall this was a hectic day, as it took time for me to learn and implement these new concepts, as well as get used to the tools.The   final of Day-3 forms the basis for ALU of the RISC-V core.
    
 # Day 4: RISC V CPU Core Implementation
   Due to the strong basics built in TL-Verilog and digital design in the previous day , The core aspect of this workshop to build a RISC V core went smoothly for   me. On this day , a plan was implemented to build the following :
@@ -121,29 +124,28 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - Register File Write
   - Branch
   
-  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic, and assembly code developed on Day 2) at the end of the day ,in similar progressive fashion like the previous day. (Code can be found here)
+  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic, and assembly code developed on Day 2) at the end of the day ,in similar progressive fashion like the previous day.[Click Here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY4/MP_1_cycle.tlv) for code.
 
-**Makerchip IDE **
+   **Makerchip IDE**
+   ![](DAY4/Day4_makerchip.png)
 
-**RISC-V CORE  Design**
+   **RISC-V CORE**
+   ![](DAY4/RISCV_CPU_CORE_1cycle.png)	
 
 # Day 5: Pipelining the RISC-V Core
-   On this day, we developed the pipelined model for the core developed on Day 4. 
+   Finally,we developed the pipelined model for the core developed on Day 4. 
    - A 3 cycle RISC V pipelined core, with all the base integer instruction sets was developed. 
    - For Load and store a Data memory element was added with neccessary instruction decoding logic.
    - Register Bypass and Squashing techniques were also incorporated to prevent `Read followed by write`
      and `branching`hazards, arised due to pipelining.
    - Testing of the pipeline design was done in same manner with Load and store incorporated in asm code.
-   - Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.
+   - Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.[Click Here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY5/RISC_V_CORE.tlv) for code.
    
-   **Makerchip IDE **
-   
-   **VIZ for RISC V LAB**
-   
-   **Final RISC V CPU DESIGN**
+   **Makerchip IDE**
+   ![](DAY5/Day5_makerchip.png)
 
-# Observations
-  **Screenshots from VIZ and Waveforms can be added for RISC - V **
+   **Final RISC V CPU Core**
+   ![](DAY5/RISC-V_Final_core.png)
 
 # Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Co-founder (VSD Corp. Pvt. Ltd)
