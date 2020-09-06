@@ -75,7 +75,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - S-type : For instructions used for storing operations.
   
 ## Lab 1 : ASM & ABI function Calls
-  A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call . ( insert code link )
+  A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .[click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY2/Day2_lab1)
   - Command used to compile the program is `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S`. 
   - To view to disassemble and view the object file in readable format, following is the command `riscv64-unknown-elf-objdump -d 1to9_custom.o|less`.
   - To run we use spike which is a RISC-V simulator, following is the command `spike pk 1to9_custom.o`.
