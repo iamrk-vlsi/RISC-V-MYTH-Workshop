@@ -1,4 +1,4 @@
-# How I built a RISC-V CPU Core in a span of 5 days?:
+# How I built a RISC-V CPU Core in a span of 5 days?
 My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) workshop, conducted by VSD Corp and Redwood EDA.This workshop was conducted over a period of 5 days and in  this short span of time we were able to understand & implement a RISC-V core with base instruction set. Programming language used in the software section was C, assembly (pseudo codes) were also utilised, along with TL-Verilog for HDL implementation. Tools used: Spike and Makerchip IDE.
 
 # Table of Contents
@@ -6,7 +6,7 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 - [Day 1 Instruction Set Architecture & GNU Toolchain.](#Day-1-Instruction-Set-Architecture-&-GNU-Toolchain)
 - [Day 2 Application Binary Interface and basic verification flow.](#Day-2-Application-Binary-Interface-and-basic-verification-flow)
 - [Day 3 Introduction to TL Verilog and Makerchip.](#Day-3-Introduction-to-TL-Verilog-and-Makerchip)
-- [Day 4 RISCV CPU Core Implementation.](#Day-4-RISCV-CPU-Core-Implementation) 
+- [Day 4:RISCV CPU Core Implementation.](#Day-4:RISCV-CPU-Core-Implementation) 
 - [Day 5 Pipelining the RISCV Core.](#Day-5-Pipelining-the-RISCV-Core)
 - [Acknowledgements.](#Acknowledgements)
 
@@ -106,7 +106,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     ![](DAY3/Day3_Diagram.png)	
    Overall this was a hectic day, as it took time for me to learn and implement these new concepts, as well as get used to the tools.The   final of Day-3 forms the basis for ALU of the RISC-V core.
    
-# Day 4 RISCV CPU Core Implementation.
+# Day 4:RISCV CPU Core Implementation.
   Due to the strong basics built in TL-Verilog and digital design in the previous day , The core aspect of this workshop to build a RISC V core went smoothly for   me. On this day , a plan was implemented to build the following :
   
   - Program Counter (PC)
