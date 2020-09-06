@@ -77,20 +77,22 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
 ## Lab 1 : ASM & ABI function Calls
   A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .[click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY2/Day2_lab1)
   - Command used to compile the program is `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S`. 
-  - To view to disassemble and view the object file in readable format, following is the command `riscv64-unknown-elf-objdump -d 1to9_custom.o|less`.
+  - To view to disassemble and view the object file in readable format, we use `riscv64-unknown-elf-objdump -d 1to9_custom.o|less`.
   - To run we use spike which is a RISC-V simulator, following is the command `spike pk 1to9_custom.o`.
   
   **Output on console**
-
+![](DAY2/day2_lab1_asm.png)
 ## Lab 2 : To run and verify on a RISC-V Core
   An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to using iverilog simulator, just to observe  the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
   
   **Output on console**
+  ![](DAY2/day2_lab2_iverilog_count_3.png)
   
 # Day 3 : Introduction to TL-Verilog(Transaction Level Verilog) and Makerchip 
-  On this day, we were introduced to TL-Verilog and we implemented basic combinational and sequential logic using the same, and finally ended with an               implementation of a sequential one cycle calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
+  An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an                   implementation of a sequential one cycle calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
   
   TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and     error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the   end of the pipeline.  
+  
   **Advantages** : 
     - Code reduction , and thus less chances of being bug prone.
     - In pipelining ,the flip flops,registers and other staged signals are implied from the context. 
