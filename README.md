@@ -56,17 +56,19 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   ![](DAY1/day_1_lab1.png)
 
 ## Lab 3 : Max and Min number representations. 
-  A C program is implemented to  show the maximum and minimum sizes for RV64I. The program can be found here (insert link)  
+  A C program is implemented to  show the maximum and minimum sizes for RV64I. The program can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/unsignedHighest.c)  
   - Commands used are same as Lab 2
 
   **Output on console**
   ![](DAY1/day1_lab2.png)
   
 # Day 2 : Application Binary Interface (ABI) and basic verification flow
-  This day, we delved deep into the lower layers on how the higher layer instructions in c are translated to machine understandable codes. 
-  Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised hardware resources . The ISA is inherently divided into two parts: `1.User & System ISA` ans `2. User ISA`  the latter is available     to the user directly by system calls. 
+  On This day, we delved deep into the lower layers on how the higher layer instructions in c are translated to machine understandable codes. 
+  Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised hardware resources . The ISA is inherently divided into two parts: *User & System ISA* and *User ISA*  the latter is available to the   user directly by system calls. 
   
-  Now, how does the ABI access the hardware resources? It uses different registers(32 in number) which are accessed by higher level each of width `XLEN = 32 bit`   for RV32 ( ~`XLEN = 64 for RV64` ) . On a higher level of abstraction these registers are accessed by their respective ABI names. 
+  Now, how does the ABI access the hardware resources? 
+  - It uses different registers(32 in number) which are each of width `XLEN = 32 bit` for RV32 (~`XLEN = 64 for RV64`) . On a higher level of abstraction these       registers are accessed by their respective ABI names.
+  
   For base integer instructions there are broadly 3 types of of such registers:
   - I-type : For instructions having immediate values as operands.
   - R-type : For instructions having only registers as operands.
