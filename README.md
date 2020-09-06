@@ -41,11 +41,11 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     The instructions which work on these numbers are called Base Integer Instruction **RV64I**.
   
 ## Lab 1 : C program of Sum 1 to n  numbers.
-  A basic C program to calculate sum of natural numbers upto a limit provided by the user. The program can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/sum1to9.c) 
-  - Command used to compile the C program is `gcc <filename.c>` or `gcc -o <binary file name> <filename.c>`and to run we use `./a.out` or `./<binary file name>`  
+  A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/sum1to9.c) 
+  - Command used to compile the C program is `gcc <filename.c>` or `gcc -o <binary file name> <filename.c>`and to run we use `./a.out` or `./<binary file name>` 
 
 ## Lab 2 : C program of Sum 1 to n  numbers, RISC-V toolchain.
-  The same C program is now compiled using RISC-V toolchain.  
+  The same C program is now compiled using RISC-V toolchain. 
   - Command used to compile the C program is `riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c` or 
     `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c`.
   - To view to disassemble and view the object file in readable format,we use `riscv64-unknown-elf-objdump -d sum1ton.o` command.
@@ -56,7 +56,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   ![](DAY1/day_1_lab1.png)
 
 ## Lab 3 : Max and Min number representations. 
-  A C program is implemented to  show the maximum and minimum sizes for RV64I. The program can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/unsignedHighest.c)  
+  A C program is implemented to  show the maximum and minimum sizes for RV64I. The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY1/unsignedHighest.c) 
   - Commands used are same as Lab 2
 
   **Output on console**
@@ -75,7 +75,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - S-type : For instructions used for storing operations.
   
 ## Lab 1 : ASM & ABI function Calls
-  A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .[click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY2/Day2_lab1)
+  A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY2/Day2_lab1)
   - Command used to compile the program is `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S`. 
   - To view to disassemble and view the object file in readable format, we use `riscv64-unknown-elf-objdump -d 1to9_custom.o|less`.
   - To run we use spike which is a RISC-V simulator, following is the command `spike pk 1to9_custom.o`.
@@ -90,9 +90,9 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   ![](DAY2/day2_lab2_iverilog_count_3.png)
   
 # Day 3 : Introduction to TL-Verilog(Transaction Level Verilog) and Makerchip 
-  An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an                   implementation of a sequential one cycle calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
+  An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential one cycle calculator. Makerchip IDE which is an open source tool developed by Redwood EDA was utilised.
   
-  TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and     error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the   end of the pipeline. 
+  TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline. 
   
   **Advantages** : 
    - Code reduction , and thus less chances of being bug prone.
@@ -101,7 +101,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
    - Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
     
   ## Lab: 1 Cycle Sequential Calculator with Validity
-   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator, which was built step by step as we progressed through the lessons.[click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY3/cyclic_calc.tlv) for code.
+   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator, which was built step by step as we progressed through the lessons.The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY3/cyclic_calc.tlv).
 
    **Makerchip IDE** 
    ![](DAY3/day3_makerchip.png)
@@ -123,7 +123,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - Register File Write
   - Branch
   
-  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic, and assembly code developed on Day 2) at the end of the day ,in similar progressive fashion like the previous day.[Click Here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY4/MP_1_cycle.tlv) for code.
+  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic, and assembly code developed on Day 2) at the end of the day ,in similar progressive fashion like the previous day.The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY4/MP_1_cycle.tlv).
 
    **Makerchip IDE**
    ![](DAY4/Day4_makerchip.png)
@@ -138,7 +138,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
    - Register Bypass and Squashing techniques were also incorporated to prevent `Read followed by write`
      and `branching`hazards, arised due to pipelining.
    - Testing of the pipeline design was done in same manner with Load and store incorporated in asm code.
-   - Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.[Click Here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY5/RISC_V_CORE.tlv) for code.
+   - Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.The code can be found [here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY5/RISC_V_CORE.tlv).
    
    **Makerchip IDE**
    ![](DAY5/Day5_makerchip.png)
