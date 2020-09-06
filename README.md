@@ -107,7 +107,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
    Overall this was a hectic day, as it took time for me to learn and implement these new concepts, as well as get used to the tools. Personally it took me more than 12 hours to complete this activity. The final lab forms the basis for ALU of the RISC-V core.
    
 # Day 4: RISC V CPU Core Implementation
-  Due to the strong basics built in TL-Verilog and digital design in the previous day , The core aspect of this workshop to build a RISC V core went smoothly for   me. On this day , a plan was implemented to implement the following :
+  Due to the strong basics built in TL-Verilog and digital design in the previous day , The core aspect of this workshop to build a RISC V core went smoothly for   me. On this day , a plan was implemented to build the following :
   
   - Program Counter (PC)
   - Imem-Rd ( Instruction Memory)
