@@ -37,7 +37,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
     - Double word i.e 64 bits
     RV64 has range 0 to (2<sup>64</sup> - 1)
     
-  - Negative i.e floating point numbers: -2<sup>63</sup> to (2<sup>63</sup> - 1)
+  - Negative i.e floating point numbers:  - 2<sup>63</sup> to (2<sup>63</sup> - 1)
     
     The instructions which work on these numbers are called Base Integer Instruction **RV64I**.
   
