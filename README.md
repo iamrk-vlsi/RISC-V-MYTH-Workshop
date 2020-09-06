@@ -3,11 +3,11 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
-- [Day 1 Instruction Set Architecture & GNU Toolchain.](#Day-1-Instruction-Set-Architecture-&-GNU-Toolchain.)
-- [Day 2 Application Binary Interface and basic verification flow.](#Day-2-Application-Binary-Interface-and-basic-verification-flow.)
-- [Day 3 Introduction to TL Verilog and Makerchip.](#Day-3-Introduction-to-TL-Verilog-and-Makerchip.)
-- [Day 4 RISCV CPU Core Implementation.](#Day-4-RISCV-CPU-Core-Implementation.) 
-- [Day 5 Pipelining the RISCV Core.](#Day-5-Pipelining-the-RISCV-Core.)
+- [Day 1 Instruction Set Architecture & GNU Toolchain.](#Day-1-Instruction-Set-Architecture-&-GNU-Toolchain)
+- [Day 2 Application Binary Interface and basic verification flow.](#Day-2-Application-Binary-Interface-and-basic-verification-flow)
+- [Day 3 Introduction to TL Verilog and Makerchip.](#Day-3-Introduction-to-TL-Verilog-and-Makerchip)
+- [Day 4 RISCV CPU Core Implementation.](#Day-4-RISCV-CPU-Core-Implementation) 
+- [Day 5 Pipelining the RISCV Core.](#Day-5-Pipelining-the-RISCV-Core)
 - [Acknowledgements.](#Acknowledgements)
 
 # What is RISC-V?
