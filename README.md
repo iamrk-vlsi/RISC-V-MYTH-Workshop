@@ -2,20 +2,19 @@
 Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) workshop, conducted by VSD Corp and Redwood EDA.This workshop was conducted over a period of 5 days and in  this short span of time we were able to understand & implement a RISC-V core with base instruction set. Programming language used in the software section was C, assembly (pseudo codes) were also utilised, along with TL-Verliog for HDL implementation. Tools used: Spike and Makerchip IDE.
 
 # Table of Contents
-- [What is RISC?](#What is RISC?)
-- [Day 1.](#Day 1)
-  - [Lab 1.](# Lab 1)
-  - [Lab 2.](# Lab 2)
-- [Day 2.](# Day 2)
-  - [Lab 1.](# Lab 1)
-  - [Lab 2.](# Lab 2)
-- [Day 3.](# Day 3)
-- [Day 4.](# Day 4) 
-- [Day 5.](# Day 5)
-- [Observations.](#observations)
-- [Challenges.](#challenges)
-- [Limitations.](#limitations)
-- [Acknowledgements.](#acknowledgements)
+- [What is RISC?](#What-is-RISC?)
+- [Day 1.](#Day-1)
+  - [Lab 1.](#Lab-1)
+  - [Lab 2.](#Lab-2)
+- [Day 2.](#Day-2)
+  - [Lab 1.](#Lab-1)
+  - [Lab 2.](#Lab-2)
+- [Day 3.](#Day-3)
+- [Day 4.](#Day-4) 
+- [Day 5.](#Day-5)
+- [Observations.](#Observations)
+- [Limitations.](#Limitations)
+- [Acknowledgements.](#Acknowledgements)
 
 
 # What is RISC?
@@ -119,19 +118,30 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - Register File Write
   - Branch
   
-  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic) at the end of the day ,in similar progressive fashion like the previous day. (Code can be found here)
+  Thus the instruction set architecture of base integer instructions, The register file, branching,etc. and eventually the CPU core was built and tested(using appropriate testbench logic, and assembly code developed on Day 2) at the end of the day ,in similar progressive fashion like the previous day. (Code can be found here)
 
 **Makerchip IDE **
 
 **RISC-V CORE  Design**
 
-# Day 5:
-  
+# Day 5: Pipelining the RISC-V Core
+   On this day, we developed the pipelined model for the core developed on Day 4. 
+   - A 3 cycle RISC V pipelined core, with all the base integer instruction sets was developed. 
+   - For Load and store a Data memory element was added with neccessary instruction decoding logic.
+   - Register Bypass and Squashing techniques were also incorporated to prevent `Read followed by write`
+     and `branching`hazards, arised due to pipelining.
+   - Testing of the pipeline design was done in same manner with Load and store incorporated in asm code.
+   - Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.
+   
+   **Makerchip IDE **
+   
+   **VIZ for RISC V LAB**
+   
+   **Final RISC V CPU DESIGN**
 
 # Observations
-
-# Challenges
-
-# Limitations
+  **Screenshots from VIZ and Waveforms can be added for RISC - V **
 
 # Acknowledgements
+- [Kunal Ghosh](https://github.com/kunalg123), Co-founder (VSD Corp. Pvt. Ltd)
+- [Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA.
