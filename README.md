@@ -60,7 +60,8 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   - Commands used are same as Lab 2
 
   **Output on console**
-
+  ![](DAY1/day1_lab2.png)
+  
 # Day 2 : Application Binary Interface (ABI) and basic verification flow
   This day, we delved deep into the lower layers on how the higher layer instructions in c are translated to machine understandable codes. 
   Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised hardware resources . The ISA is inherently divided into two parts: `1.User & System ISA` ans `2. User ISA`  the latter is available     to the user directly by system calls. 
