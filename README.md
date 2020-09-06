@@ -4,20 +4,14 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 # Table of Contents
 - [What is RISC?](#What-is-RISC?)
 - [Day 1.](#Day-1)
-  - [Lab 1.](#Lab-1)
-  - [Lab 2.](#Lab-2)
 - [Day 2.](#Day-2)
-  - [Lab 1.](#Lab-1)
-  - [Lab 2.](#Lab-2)
 - [Day 3.](#Day-3)
 - [Day 4.](#Day-4) 
 - [Day 5.](#Day-5)
-- [Observations.](#Observations)
 - [Acknowledgements.](#Acknowledgements)
 
-
-# What is RISC?
-RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open and this makes it easy and flexible for anyone to build a processor that supports it. This workshop thus, gave us and overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
+# What is RISC-V?
+RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open and this makes it easy and flexible for anyone to build a processor that supports it. In this workshop we were given the overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
 
 # Day 1 : Instruction Set Architecture & GNU Toolchain
   This was just a warm up of the extensive work we would be doing in the further days. It made us familiar with the VSD-IAT platform and using the lab instances . 
