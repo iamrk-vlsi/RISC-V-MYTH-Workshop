@@ -13,7 +13,6 @@ Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) wor
 - [Day 4.](#Day-4) 
 - [Day 5.](#Day-5)
 - [Observations.](#Observations)
-- [Limitations.](#Limitations)
 - [Acknowledgements.](#Acknowledgements)
 
 
