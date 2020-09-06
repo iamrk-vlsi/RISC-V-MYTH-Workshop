@@ -95,14 +95,13 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and     error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the   end of the pipeline. 
   
   **Advantages** : 
-    - Code reduction , and thus less chances of being bug prone.
-    - In pipelining ,the flip flops,registers and other staged signals are implied from the context. 
-    - It is very easy to stage different sections without impacting the behaviour of the logic.
-    - Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
+   - Code reduction , and thus less chances of being bug prone.
+   - In pipelining ,the flip flops,registers and other staged signals are implied from the context. 
+   - It is very easy to stage different sections without impacting the behaviour of the logic.
+   - Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
     
   ## Lab: 1 Cycle Sequential Calculator with Validity
-   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator, which was built step by step as we progressed through the lessons.
-    - For Cyclic Calculator Code [click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY3/cyclic_calc.tlv)
+   There were exaustive number of labs for each and every lesson and it indeed was a hectic day, but the end result was an implementation of a fully working 1 cycle sequential calculator, which was built step by step as we progressed through the lessons.[click here](https://github.com/iamrk-vlsi/RISC-V-MYTH-Workshop/tree/master/DAY3/cyclic_calc.tlv) for code.
 
    **Makerchip IDE** 
    ![](DAY3/day3_makerchip.png)
