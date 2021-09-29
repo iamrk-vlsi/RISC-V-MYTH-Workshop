@@ -143,5 +143,5 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
 # Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Co-founder (VSD Corp. Pvt. Ltd)
 - [Steve Hoover](https://github.com/stevehoover), Founder, Redwood EDA.
-- [Shivam Potdar](https://github.com/shivampotdar), GSoC 2020 Student,FOSSi Foundation.
-- [Vineet Jain](https://github.com/vineetjain07), GSoC 2020 Student, FOSSi Foundation.
+- [Shivam Potdar](https://github.com/shivampotdar), CPU Architecture/Performance Modeling Engineer.
+- [Vineet Jain](https://github.com/vineetjain07),RISCV Community member, GSoC Student,FOSSi Foundation.
