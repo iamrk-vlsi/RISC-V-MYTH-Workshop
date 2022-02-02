@@ -159,7 +159,7 @@
       @3   
          //Intermediate signals
          $sltu_result = $src1_value + $src2_value;
-         $sltiu_result = $src1_value < $imm;
+         $sltiu_result = $src1_value << $imm;
          //Assign the ALU $results
          $result[31:0] = $is_addi ? $src1_value + $imm :
                          $is_add ? $src1_value + $src2_value :
