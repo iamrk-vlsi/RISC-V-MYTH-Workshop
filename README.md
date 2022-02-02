@@ -11,11 +11,11 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 - [Acknowledgements.](#Acknowledgements)
 
 # What is RISC V?
-RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open and this makes it easy and flexible for anyone to build a processor that supports it. In this workshop we were given the overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
+RISC-V is an open source instruction set architecture(ISA) based on reduced instruction set computing concept.Unlike other existing commercial ISAs, the RISC-V ISA is open source and this makes it easy and flexible for anyone to build a processor that supports it. In this workshop we were given the overview of the software as well as the hardware aspect and hands on labs were done to learn by doing rather than just reading the theory or specifications.
 
 # Day 1 Instruction Set Architecture & GNU Toolchain.
   This was just a warm up of the extensive work we would be doing in the further days. It made us familiar with the VSD-IAT platform and using the lab instances . 
-  A brief overview of how the higher level languages are converted to assembly and then into machine/binary format , in a hierarchical level was given. Then we     were introduced to the various types of instructions which are as follows:
+  A brief overview of how the higher level languages are converted to assembly and then into machine/binary format , in a hierarchical level was given. Then we were introduced to the various types of instructions which are as follows:
   
   - **RV64I** or RV32I Base integer instructions: 64 and 32 bit data instructions respectively
   - **RV64M** i.e Multiply extension
@@ -58,7 +58,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
   
 # Day 2 Application Binary Interface and basic verification flow.
   On This day, we delved deep into the lower layers on how the higher layer instructions in c are translated to machine understandable codes. 
-  Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised hardware resources . The ISA is inherently divided into two parts: *User & System ISA* and *User ISA*  the latter is available to the   user directly by system calls. 
+  Just like how application program interface (API) is used by application programs to access the standard libraries, an application binary interface or system     call interface is utilised to access hardware resources . The ISA is inherently divided into two parts: *User & System ISA* and *User ISA*  the latter is available to the   user directly by system calls. 
   
   Now, how does the ABI access the hardware resources? 
   - It uses different registers(32 in number) which are each of width `XLEN = 32 bit` for RV32 (~`XLEN = 64 for RV64`) . On a higher level of abstraction these       registers are accessed by their respective ABI names.
@@ -127,7 +127,7 @@ RISC-V is an open source instruction set architecture(ISA) based on reduced inst
 
 # Day 5 Pipelining the RISCV Core.
    Finally,we developed the pipelined model for the core developed on Day 4. 
-   - A 3 cycle RISC V pipelined core, with all the base integer instruction sets was developed. 
+   - A 4 stage RISC V pipelined core, with all the base integer instruction sets was developed. 
    - For Load and store a Data memory element was added with neccessary instruction decoding logic.
    - Register Bypass and Squashing techniques were also incorporated to prevent `Read followed by write`
      and `branching`hazards, arised due to pipelining.
